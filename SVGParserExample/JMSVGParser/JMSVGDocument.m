@@ -21,7 +21,7 @@
 
 @implementation JMSVGDocument
 
-+ (JMSVGDocument *)documentNamed:(NSString *)documentName;
++ (JMSVGDocument *)documentNamed:(NSString *)documentName
 {
     JMSVGDocument *document = JMSVGDocument.new;
     JMSVGParser *parser = [JMSVGParser.alloc initWithSVGDocument:[NSBundle.mainBundle pathForResource:documentName ofType:@"svg"]];
